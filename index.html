@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Distance</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-block">
+        <button class="m-menu">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+        <div class="search">
+          <input type="text" class="search-input" placeholder="Search" />
+        </div>
+        <div class="navigation">
+          <div class="user">
+            <img src="./img/avatar.png" alt="avatar" class="user-avatar" />
+            <span class="user-name">Mateusz</span>
+          </div>
+          <nav class="navigation-panel">
+            <a href="#" class="navigation-link">Home</a>
+            <a href="#" class="navigation-link">Create</a>
+          </nav>
+          <div class="icons-panel">
+            <a href="#" class="icon-link">
+              <svg class="header-icon" width="20" height="20">
+                <use xlink:href="./img/icons.svg#users"></use>
+              </svg>
+            </a>
+            <a href="#" class="icon-link">
+              <svg class="header-icon" width="22" height="22">
+                <use xlink:href="./img/icons.svg#chat"></use>
+              </svg>
+            </a>
+            <a href="#" class="icon-link">
+              <span class="notification">5</span>
+              <svg class="header-icon" width="16" height="22">
+                <use xlink:href="./img/icons.svg#bell"></use>
+              </svg>
+            </a>
+            <a href="#" class="icon-link">
+              <svg class="header-icon" width="22" height="22">
+                <use xlink:href="./img/icons.svg#info"></use>
+              </svg>
+            </a>
+            <!-- <a href="#" class="icon-link">
+              <svg class="header-icon" width="22" height="22">
+                <use xlink:href="./img/icons.svg#dropdown"></use>
+              </svg>
+            </a> -->
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="menu-sidebar">
+        <div class="user">
+          <img src="./img/avatar.png" alt="avatar" class="user-avatar" />
+          <span class="user-name">Mateusz Wierzbicki</span>
+        </div>
+        <!-- /.user -->
+        <nav class="nav-group">
+          <a href="#" class="nav-link active">
+            <svg class="nav-icon" width="20" height="20">
+              <use xlink:href="./img/icons.svg#news"></use>
+            </svg>
+            <span class="nav-text">News Feed</span>
+          </a>
+          <a href="#" class="nav-link">
+            <svg class="nav-icon" width="24" height="24">
+              <use xlink:href="./img/icons.svg#chat2"></use>
+            </svg>
+            <span class="nav-text">Messages</span>
+          </a>
+          <a href="#" class="nav-link">
+            <svg class="nav-icon" width="24" height="24">
+              <use xlink:href="./img/icons.svg#market"></use>
+            </svg>
+            <span class="nav-text">Marketplace</span>
+          </a>
+        </nav>
+        <nav class="nav-group">
+          <h3 class="nav-title">Shortcuts</h3>
+
+          <a href="#" class="nav-link">
+            <svg class="nav-icon" width="24" height="24">
+              <use xlink:href="./img/icons.svg#trophy"></use>
+            </svg>
+            <span class="nav-text">Product Design</span>
+          </a>
+          <a href="#" class="nav-link">
+            <svg class="nav-icon" width="24" height="24">
+              <use xlink:href="./img/icons.svg#trophy"></use>
+            </svg>
+            <span class="nav-text">UX & UI</span>
+          </a>
+          <a href="#" class="nav-link">
+            <svg class="nav-icon" width="24" height="24">
+              <use xlink:href="./img/icons.svg#trophy"></use>
+            </svg>
+            <span class="nav-text">Figma</span>
+          </a>
+          <a href="#" class="nav-link">
+            <svg class="nav-icon" width="24" height="24">
+              <use xlink:href="./img/icons.svg#trophy"></use>
+            </svg>
+            <span class="nav-text">Ant Design</span>
+          </a>
+        </nav>
+
+        <nav class="nav-group">
+          <h3 class="nav-title">Explore</h3>
+          <a href="#" class="nav-link">
+            <svg class="nav-icon" width="24" height="24">
+              <use xlink:href="./img/icons.svg#flag"></use>
+            </svg>
+            <span class="nav-text">Pages</span>
+          </a>
+          <a href="#" class="nav-link">
+            <svg class="nav-icon" width="24" height="24">
+              <use xlink:href="./img/icons.svg#headphones"></use>
+            </svg>
+            <span class="nav-text">Groups</span>
+          </a>
+          <a href="#" class="nav-link">
+            <svg class="nav-icon" width="24" height="24">
+              <use xlink:href="./img/icons.svg#home"></use>
+            </svg>
+            <span class="nav-text">Events</span>
+          </a>
+          <a href="#" class="nav-link">
+            <svg class="nav-icon" width="24" height="24">
+              <use xlink:href="./img/icons.svg#rocket"></use>
+            </svg>
+            <span class="nav-text">Games</span>
+          </a>
+          <a href="#" class="nav-link">
+            <svg class="nav-icon" width="16" height="16">
+              <use xlink:href="./img/icons.svg#dropdown"></use>
+            </svg>
+            <span class="nav-text">See more...</span>
+          </a>
+        </nav>
+      </div>
+      <!-- /.menu-sidebar -->
+      <div class="main-feed">
+        <div class="create-post">
+          <div class="create-post-header">
+            <h4 class="create-post-title">Create post</h4>
+          </div>
+          <!-- /.header -->
+          <div class="create-post-body">
+            <img src="./img/avatar.png" alt="avatar" class="user-avatar"></img>
+            <div class="create-post-input" contenteditable="true">What’s on your mind, Mateusz?</div>
+          </div>
+          <!-- /.body -->
+          <div class="create-post-footer">
+            <button class="tag">
+              <svg class="btn-icon" width="24" height="24">
+                <use xlink:href="./img/icons.svg#picture"></use>
+              </svg>
+              <span class="btn-text">Photo/Video</span>
+            </button>
+            <button class="tag"> 
+              <svg class="btn-icon" width="24" height="24">
+                <use xlink:href="./img/icons.svg#user-add"></use>
+              </svg>
+              <span class="btn-text">Tag friends</span>
+            </button>
+            <button class="tag"> 
+              <svg class="btn-icon" width="24" height="24">
+                <use xlink:href="./img/icons.svg#smile"></use>
+              </svg>
+              <span class="btn-text">Feeling/Activ...</span>
+            </button>
+            <button class="tag"> 
+              <span class="btn-text">...</span>
+            </button>
+          </div>
+          <!-- /.footer -->
+        </div>
+        <!-- /.create-post -->
+        <div class="post">
+          <div class="post-header">
+            <div class="user">
+              <img class="user-avatar" src="./img/avatar.png" alt="avatar">
+              <div class="post-info">
+                <a href="#" class="post-author">Mateusz Wierzbicki</a>
+                <div class="post-info-time">
+                  <span class="post-time">3 hrs</span>
+                  <svg class="setting-icon" width="14" height="14" >
+                    <use xlink:href="./img/icons.svg#setting"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <button class="post-header-btn">
+              <svg class="post-btn-icon" width="24" height="24" >
+                <use xlink:href="./img/icons.svg#dots"></use>
+              </svg>
+            </button>
+          </div>
+          <!-- /.post-header -->
+          <div class="post-content">
+            <p class="post-text">Did you know that all of this was made using only components and styles from Ant Desing System for Figma? 
+              Learn more: <a href="https://antforfigma.com">https://antforfigma.com</a> </p>
+              <img src="./img/post-img.jpg" alt="post-image" class="post-img">
+          </div>
+          <!-- /.post content -->
+          <div class="likes">
+            <svg class="likes-icon" width="16" height="16" >
+              <use xlink:href="./img/icons.svg#like"></use>
+            </svg>
+            <span class="likes-count">25</span>
+          </div>
+          <!-- /.likes -->
+          <post class="post-footer">
+            <button class="post-btn">
+              <svg class="post-btn-icon" width="24" height="24" >
+                <use xlink:href="./img/icons.svg#like-btn"></use>
+              </svg>
+              <span class="post-btn-text">Like</span>
+            </button>
+            <button class="post-btn">
+              <svg class="post-btn-icon" width="24" height="24" >
+                <use xlink:href="./img/icons.svg#chat"></use>
+              </svg>
+              <span class="post-btn-text">Comment</span>
+            </button>
+            <button class="post-btn">
+              <svg class="post-btn-icon" width="24" height="24" >
+                <use xlink:href="./img/icons.svg#share"></use>
+              </svg>
+              <span class="post-btn-text">Share</span>
+            </button>
+          </post>
+          <!-- /.footer -->
+        </div>
+        <!-- /.post -->
+        <div class="post">
+          <div class="post-header">
+            <div class="user">
+              <img class="user-avatar" src="./img/avatar.png" alt="avatar">
+              <div class="post-info">
+                <a href="#" class="post-author">Mateusz Wierzbicki</a>
+                <div class="post-info-time">
+                  <span class="post-time">13 hrs</span>
+                  <svg class="setting-icon" width="14" height="14" >
+                    <use xlink:href="./img/icons.svg#setting"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <button class="post-header-btn">
+              <svg class="post-btn-icon" width="24" height="24" >
+                <use xlink:href="./img/icons.svg#dots"></use>
+              </svg>
+            </button>
+          </div>
+          <!-- /.post-header -->
+          <div class="post-content">
+            <p class="post-text">Did you know that all of this was made using only components and styles from Ant Desing System for Figma? 
+              Learn more: <a href="https://antforfigma.com">https://antforfigma.com</a> </p>
+              <img src="./img/post-img.jpg" alt="post-image" class="post-img">
+          </div>
+          <!-- /.post content -->
+          <div class="likes">
+            <svg class="likes-icon" width="16" height="16" >
+              <use xlink:href="./img/icons.svg#like"></use>
+            </svg>
+            <span class="likes-count">13</span>
+          </div>
+          <!-- /.likes -->
+          <post class="post-footer">
+            <button class="post-btn">
+              <svg class="post-btn-icon" width="24" height="24" >
+                <use xlink:href="./img/icons.svg#like-btn"></use>
+              </svg>
+              <span class="post-btn-text">Like</span>
+            </button>
+            <button class="post-btn">
+              <svg class="post-btn-icon" width="24" height="24" >
+                <use xlink:href="./img/icons.svg#chat"></use>
+              </svg>
+              <span class="post-btn-text">Comment</span>
+            </button>
+            <button class="post-btn">
+              <svg class="post-btn-icon" width="24" height="24" >
+                <use xlink:href="./img/icons.svg#share"></use>
+              </svg>
+              <span class="post-btn-text">Share</span>
+            </button>
+          </post>
+          <!-- /.footer -->
+        </div>
+        <!-- /.post -->
+      </div>
+      <!-- /.main-feed -->
+      <div class="right-sidebar">
+        <div class="stories">
+          <div class="stories-header">
+            <h4 class="stories-title">Stories</h4>
+            <div class="stories-btns">
+              <a href="#" class="stories-btn-link">
+                <svg class="stories-header-icon"width="16" height="16" >
+                  <use xlink:href="./img/icons.svg#clock"></use>
+                </svg>
+                <span class="stories-btn-text">Archive</span>
+              </a>
+              <a href="#" class="stories-btn-link">
+                <span class="stories-btn-text">Settings</span>
+              </a>
+            </div>
+            <!-- /.story-btns -->
+          </div>
+          <!-- /.stories-header -->
+          <a href="#" class="story-item-add">
+            <!-- <img src="./img/avatar.png" alt="avatar" class="user-avatar"> -->
+            <div class="story-img">+</div>
+            <div class="story-item-text">
+              <span class="story-title">Add to your story</span>
+              <span class="story-text">Share a photo or video or write something</span>
+            </div>
+          </a>
+          <a href="#" class="story-item">
+            <!-- <img src="./img/avatar.png" alt="avatar" class="user-avatar"> -->
+            <div class="story-img concuria"></div>
+            <div class="story-item-text">
+              <span class="story-title">Concuria</span>
+              <span class="story-text">4 hours ago</span>
+            </div>
+          </a>
+          <a href="#" class="story-item">
+            <!-- <img src="./img/avatar.png" alt="avatar" class="user-avatar"> -->
+            <div class="story-img figma"></div>
+            <div class="story-item-text">
+              <span class="story-title">Figma</span>
+              <span class="story-text">5 hours ago</span>
+            </div>
+          </a>
+          <a href="#" class="stories-more">
+            <svg class="stories-icon" width="16" height="16">
+              <use xlink:href="./img/icons.svg#dropdown"></use>
+            </svg>
+            <span class="stories-more-text">See more...</span>
+          </a>
+        <!-- /.stories -->
+      </div>
+
+      <div class="birthdays">
+        <div class="birthday-item">
+          <svg class="birthday-icon" width="24" height="24">
+            <use xlink:href="./img/icons.svg#gift"></use>
+          </svg>
+          <a href="#" class="birthday-link">Jane Miller</a>
+          <span class="birthday-text">’s birthday is today</span>
+        </div>
+        <div class="birthday-item">
+          <svg class="birthday-icon" width="24" height="24">
+            <use xlink:href="./img/icons.svg#gift"></use>
+          </svg>
+          <a href="#" class="birthday-link">John Doe</a>
+          <span class="birthday-text">’s birthday is today</span>
+        </div>
+         <!-- /.birthdays -->
+      </div>
+
+      <div class="page-info">
+        <div class="page-info-header">
+          <h4 class="page-info-header-title">Your page</h4>
+          <button class="page-info-btn">
+            <svg class="page-info-btn-icon" width="24" height="24">
+              <use xlink:href="./img/icons.svg#dots"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="page-info-body">
+          <div class="page-info-img concuria"></div>
+          <div class="page-info-text">
+            <div class="page-info-title">Concuria</div>
+            <div class="page-info-notifications">
+              <div class="page-info-notification-item">
+                <svg class="page-info-icon" width="16" height="16">
+                  <use xlink:href="./img/icons.svg#chat"></use>
+                </svg>
+                <span class="page-info-notifications-text">Messages</span>
+              </div>
+              <div class="page-info-notification-item">
+                <svg class="page-info-icon" width="16" height="16">
+                  <use xlink:href="./img/icons.svg#bell"></use>
+                </svg>
+                <span class="page-info-notifications-text">Notifications</span>
+                <span class="page-info-notifications-count">5</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-info-footer">
+          <div class="page-info-footer-tabs">
+            <div class="page-info-tab-item active" data-id='likes'>Likes</div>
+            <div class="page-info-tab-item" data-id='views'>Views</div>
+            <div class="page-info-tab-item" data-id='posts'>Posts</div>
+          </div>
+          <div class="page-info-statistics active" id="page-info-likes">
+            <div class="page-info-statistics-count">262</div>
+            <div class="page-info-statistics-text">5 likes this week</div>
+          </div>
+          <div class="page-info-statistics" id="page-info-views">
+            <div class="page-info-statistics-count">335</div>
+            <div class="page-info-statistics-text">6 views this week</div>
+          </div>
+          <div class="page-info-statistics" id="page-info-posts">
+            <div class="page-info-statistics-count">2</div>
+            <div class="page-info-statistics-text">1 post this week</div>
+          </div>
+        </div>
+      </div>
+      <!-- /.page-info -->
+     
+
+      <!-- /.right-sidebar -->
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
